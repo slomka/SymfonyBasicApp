@@ -3,3 +3,6 @@ basic_app_app:
     type:     annotation
     prefix:   /
 
+product:
+    resource: "@BasicAppAppBundle/Controller/"
+    type:     annotation
