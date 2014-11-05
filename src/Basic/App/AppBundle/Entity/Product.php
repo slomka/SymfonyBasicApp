@@ -20,6 +20,33 @@ class Product
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+    
+    #create new fields
+    
+    
+    /**
+     *
+     * @var string
+     * @ORM\Column(name="name", type="string", length=255, unique=false, nullable=false)
+     */
+    private $name;
+    
+     /**
+     *
+     * @var string
+     * @ORM\Column(name="desctipion", type="text", unique=false, nullable=true)
+     */
+    private $description;
+    
+     /**
+     *
+     * @var float
+     * @ORM\Column(name="price", type="decimal", precision=9, scale=2, unique=false, nullable=false)
+     */
+    private $price;
+    
+    
+
 
 
     /**
